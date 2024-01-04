@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+.hero{
+    background: url('./images/back-image.png');
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 10px  10%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 140px;
+}
+nav ul  {
+   display: flex;
+   list-style-type: none;
+}
+nav ul li{
+    align-items: center;
+    margin-right: 15px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+.login-btn{
+    text-decoration: none;
+    margin-right: 15px;
+    color: #333;
+    font-weight: 400;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    background: linear-gradient(45deg,#df4881,#c430d7);
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+
+.container{
+    margin-top: 10%;
+    max-width: 600px;
+}
+h1{
+    font-size: 70px;
+    color: #222;
+    animation: fade-in 0.5s  linear;
+}
+p{
+    width: 550px;
+    padding: 10px 0 30px;
+    animation: fade-in 0.5s 0.7s backwards;
+    font-weight: 400;
+    color: #333;
+    
+}
+.container >.btn{
+    padding: 15px 80px;
+    transition: 0.5s;
+    animation: fade-in 0.5s 1s backwards;
+   
+}
+.btn:hover{
+  border-top-right-radius: 30px;
+  
+}
+
+.feature-img{
+    width: 430px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    animation: fade-in 0.5s 1.5s backwards;
+    
+
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
